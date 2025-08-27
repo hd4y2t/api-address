@@ -1,6 +1,6 @@
 package sub_district
 
-type SubDistrictService interface{
+type SubDistrictService interface {
 	GetAll() []SubDistrict
 	GetById(id int) SubDistrict
 	GetByProvinceID(provinceID int) []SubDistrict
