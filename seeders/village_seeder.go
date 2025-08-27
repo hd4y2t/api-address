@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func VillageCity(db *gorm.DB) {
+func VillageSeed(db *gorm.DB) {
 	// --- Seed Villages ---
 	villages := []village.Village{
 		{Name: "Kebayoran", ProvinceID: 1, CityId: 1, SubDistrictID: 1},

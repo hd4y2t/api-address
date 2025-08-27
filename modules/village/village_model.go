@@ -1,9 +1,10 @@
 package village
 
 type Village struct {
-	ID            int    `json:"id" gorm:"primaryKey"`
-	ProvinceID    int    `json:"province_id" gorm:"not null"`
-	CityId        int    `json:"city_id" gorm:"column:city_id"`
-	SubDistrictID int    `json:"sub_district_id" gorm:"column:sub_district_id"`
-	Name          string `json:"name" gorm:"varchar(255)`
+	ID           int    `json:"id" gorm:"primaryKey"`
+	ProvinceCode string `json:"province_code" gorm:"column:province_code"`
+	CityCode     string `json:"city_code" gorm:"column:city_code"`
+	DistrictCode string `json:"district_code" gorm:"column:district_code"`
+	Code         string `json:"code" gorm:"column:code"`
+	Name         string `json:"name" gorm:"varchar(255)`
 }

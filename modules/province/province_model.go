@@ -2,5 +2,6 @@ package province
 
 type Province struct {
 	ID   int    `json:"id" gorm:"primaryKey"`
-	Name string `json:"name" gorm:"varchar(255)`
+	Code string `json:"code" gorm:"varchar(10)"`
+	Name string `json:"name" gorm:"varchar(255)"`
 }

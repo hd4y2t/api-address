@@ -8,13 +8,162 @@ import (
 
 func ProvinceSeed(db *gorm.DB) {
 	provinces := []province.Province{
-		{Name: "DKI Jakarta"},
-		{Name: "Jawa Barat"},
-		{Name: "Jawa Timur"},
+		{
+			Code: "11",
+			Name: "ACEH",
+		},
+		{
+			Code: "12",
+			Name: "SUMATERA UTARA",
+		},
+		{
+			Code: "13",
+			Name: "SUMATERA BARAT",
+		},
+		{
+			Code: "14",
+			Name: "RIAU",
+		},
+		{
+			Code: "15",
+			Name: "JAMBI",
+		},
+		{
+			Code: "16",
+			Name: "SUMATERA SELATAN",
+		},
+		{
+			Code: "17",
+			Name: "BENGKULU",
+		},
+		{
+			Code: "18",
+			Name: "LAMPUNG",
+		},
+		{
+			Code: "19",
+			Name: "KEPULAUAN BANGKA BELITUNG",
+		},
+		{
+			Code: "21",
+			Name: "KEPULAUAN RIAU",
+		},
+		{
+			Code: "31",
+			Name: "DKI JAKARTA",
+		},
+		{
+			Code: "32",
+			Name: "JAWA BARAT",
+		},
+		{
+			Code: "33",
+			Name: "JAWA TENGAH",
+		},
+		{
+			Code: "34",
+			Name: "DI YOGYAKARTA",
+		},
+		{
+			Code: "35",
+			Name: "JAWA TIMUR",
+		},
+		{
+			Code: "36",
+			Name: "BANTEN",
+		},
+		{
+			Code: "51",
+			Name: "BALI",
+		},
+		{
+			Code: "52",
+			Name: "NUSA TENGGARA BARAT",
+		},
+		{
+			Code: "53",
+			Name: "NUSA TENGGARA TIMUR",
+		},
+		{
+			Code: "61",
+			Name: "KALIMANTAN BARAT",
+		},
+		{
+			Code: "62",
+			Name: "KALIMANTAN TENGAH",
+		},
+		{
+			Code: "63",
+			Name: "KALIMANTAN SELATAN",
+		},
+		{
+			Code: "64",
+			Name: "KALIMANTAN TIMUR",
+		},
+		{
+			Code: "65",
+			Name: "KALIMANTAN UTARA",
+		},
+		{
+			Code: "71",
+			Name: "SULAWESI UTARA",
+		},
+		{
+			Code: "72",
+			Name: "SULAWESI TENGAH",
+		},
+		{
+			Code: "73",
+			Name: "SULAWESI SELATAN",
+		},
+		{
+			Code: "74",
+			Name: "SULAWESI TENGGARA",
+		},
+		{
+			Code: "75",
+			Name: "GORONTALO",
+		},
+		{
+			Code: "76",
+			Name: "SULAWESI BARAT",
+		},
+		{
+			Code: "81",
+			Name: "MALUKU",
+		},
+		{
+			Code: "82",
+			Name: "MALUKU UTARA",
+		},
+		{
+			Code: "91",
+			Name: "PAPUA BARAT",
+		},
+		{
+			Code: "92",
+			Name: "PAPUA BARAT DAYA",
+		},
+		{
+			Code: "94",
+			Name: "PAPUA",
+		},
+		{
+			Code: "95",
+			Name: "PAPUA SELATAN",
+		},
+		{
+			Code: "96",
+			Name: "PAPUA TENGAH",
+		},
+		{
+			Code: "97",
+			Name: "PAPUA PEGUNUNGAN",
+		},
 	}
 
 	for _, p := range provinces {
-		db.FirstOrCreate(&p, province.Province{Name: p.Name})
+		db.FirstOrCreate(&p, province.Province{Code: p.Code, Name: p.Name})
 	}
 
 	fmt.Println("Province seeder berhasil")
