@@ -2,8 +2,8 @@ package district
 
 type District struct {
 	ID           int    `json:"id" gorm:"primaryKey"`
-	ProvinceCode string    `json:"province_code" gorm:"column:province_code"`
-	CityCode     string    `json:"city_code" gorm:"column:city_code"`
-	Code		 string `json:"code" gorm:"column:code"`
-	Name         string `json:"name" gorm:"varchar(255)"`
+	ProvinceId   string `json:"province_id" gorm:"column:province_id"`
+	CityId      string `json:"city_id" gorm:"column:city_id"`
+	Code        string `json:"code" gorm:"column:code"`
+	Name        string `json:"name" gorm:"varchar(255)"`
 }

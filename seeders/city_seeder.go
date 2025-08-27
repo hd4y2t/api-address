@@ -10,45 +10,100 @@ func CitySeed(db *gorm.DB) {
 	cities := []city.City{
 		{
 			Name: "KAB. SIMEULUE",
-			ProvinceID: 1,
+			ProvinceId: "1",
 		},
 		{
 			Name: "KAB. ACEH SINGKIL",
-			ProvinceID: 1,
+			ProvinceId: "1",
 		},
 		{
 			Name: "KAB. ACEH SELATAN",
-			ProvinceID: 1,
+			ProvinceId: "1",
 		},
 		{
 			Name: "KAB. ACEH TENGGARA",
-			ProvinceID: 1,
+			ProvinceId: "1",
 		},
 		{
 			Name: "KAB. ACEH TIMUR",
-			ProvinceID: 1,
-    "06": "KAB. ACEH TENGAH",
-    "07": "KAB. ACEH BARAT",
-    "08": "KAB. ACEH BESAR",
-    "09": "KAB. PIDIE",
-    "10": "KAB. BIREUEN",
-    "11": "KAB. ACEH UTARA",
-    "12": "KAB. ACEH BARAT DAYA",
-    "13": "KAB. GAYO LUES",
-    "14": "KAB. ACEH TAMIANG",
-    "15": "KAB. NAGAN RAYA",
-    "16": "KAB. ACEH JAYA",
-    "17": "KAB. BENER MERIAH",
-    "18": "KAB. PIDIE JAYA",
-    "71": "KOTA BANDA ACEH",
-    "72": "KOTA SABANG",
-    "73": "KOTA LANGSA",
-    "74": "KOTA LHOKSEUMAWE",
-    "75": "KOTA SUBULUSSALAM",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH TENGAH",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH BARAT",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH BESAR",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. PIDIE",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. BIREUEN",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH UTARA",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH BARAT DAYA",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. GAYO LUES",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH TAMIANG",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. NAGAN RAYA",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. ACEH JAYA",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. BENER MERIAH",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KAB. PIDIE JAYA",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KOTA BANDA ACEH",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KOTA SABANG",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KOTA LANGSA",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KOTA LHOKSEUMAWE",
+			ProvinceId: "1",
+		},
+		{
+			Name: "KOTA SUBULUSSALAM",
+			ProvinceId: "1",
+		},
 	}
 
 	for _, c := range cities {
-		db.FirstOrCreate(&c, city.City{Name: c.Name, ProvinceID: c.ProvinceID})
+		db.FirstOrCreate(&c, city.City{Name: c.Name, ProvinceId: c.ProvinceId})
 	}
 
 	fmt.Println("City seeder berhasil")
