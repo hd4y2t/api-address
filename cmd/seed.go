@@ -1,13 +1,13 @@
 package cmd
 
 import (
-    "api-address/database"
-    "api-address/seeder"
-    "fmt"
+	"../seeder"
+	"gorm.io/gorm"
 )
 
-func main() {
-    db := database.DB()
-    seeder.Seed(db)
-    fmt.Println("✅ Seeder berhasil dijalankan!")
+func SeedAll(db *gorm.DB) {
+	seeder.ProvinceSeed(db)
+	seeder.CitySeed(db)
+	seeder.VillageCity(db)
+	seeder.SubDistrictSeed(db)
 }

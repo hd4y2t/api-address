@@ -17,5 +17,5 @@ func ProvinceSeed(db *gorm.DB) {
 		db.FirstOrCreate(&p, province.Province{Name: p.Name})
 	}
 
-	fmt.Println("✅ Province seeder berhasil")
+	fmt.Println("Province seeder berhasil")
 }

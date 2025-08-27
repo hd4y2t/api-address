@@ -17,5 +17,5 @@ func SeedCity(db *gorm.DB) {
 		db.FirstOrCreate(&c, city.City{Name: c.Name, ProvinceID: c.ProvinceID})
 	}
 
-	fmt.Println("✅ City seeder berhasil")
+	fmt.Println("City seeder berhasil")
 }
