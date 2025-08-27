@@ -1,7 +1,7 @@
 package seeder
 
 import (
-	"api-address/modules/village"
+	"api-address/moduls/village"
 	"fmt"
 
 	"gorm.io/gorm"

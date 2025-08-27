@@ -1,7 +1,7 @@
 package seeder
 
 import (
-	district "api-address/modules/district"
+	district "api-address/moduls/district"
 	"fmt"
 	"gorm.io/gorm"
 )

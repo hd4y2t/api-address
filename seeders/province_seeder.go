@@ -1,7 +1,7 @@
 package seeder
 
 import (
-	"api-address/modules/province"
+	"api-address/moduls/province"
 	"fmt"
 	"gorm.io/gorm"
 )
